@@ -2,6 +2,20 @@
   "use strict";
   var regalo = document.getElementById("regalo");
   document.addEventListener("DOMContentLoaded", function () {
+    var map = L.map("mapa").setView([-17.393055, -66.162742], 20);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    L.marker([-17.393055, -66.162742])
+      .addTo(map)
+      .bindPopup("GDLwebCamp 2222 boletos disponibles")
+      .openPopup();
+      
+
+
     //campos datos usuario
     var nombre = document.getElementById("nombre");
     var apellido = document.getElementById("apellido");
