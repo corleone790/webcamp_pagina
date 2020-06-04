@@ -9,8 +9,8 @@
  */
 
 /* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
+  Base styles: opinionated defaults
+  ========================================================================== */
 
 html {
   color: #222;
@@ -608,6 +608,7 @@ blockquote p::before {
 }
 footer.info-testimoniales {
   padding: 0;
+  background-color: transparent;
 }
 footer.info-testimoniales img {
   float: left;
@@ -630,7 +631,7 @@ footer.info-testimoniales cite span {
   color: #000000;
   display: block;
   text-transform: none;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 /**Newsletter**/
 div.newsletter {
@@ -648,7 +649,7 @@ div.newsletter .contenido {
   position: relative;
 }
 div.newsletter .contenido p {
-  font-size: 2em;
+  font-size: 1.2em;
   text-transform: lowercase;
 }
 div.newsletter .contenido h3 {
@@ -708,6 +709,106 @@ p.copyright {
   padding: 10px 0;
   margin: 20px 0 0 0;
   text-align: center;
+}
+/**INTERNAS**/
+form.registro h3{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+form.registro label{
+  margin-bottom: 9px;
+  font-weight: bold;
+}
+h4{
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+div.caja{
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+
+}
+div.campo{
+  padding: 20px;
+}
+@media only screen and (min-width: 768px){
+  div.campo{
+    float: left;
+    width: 33.3%;
+  }
+
+}
+div.paquetes .tabla-precio:hover{
+  transform: none;
+  box-shadow: none;
+}
+div.paquetes .tabla-precio input{
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+.contenido-dia{
+  padding: 20px;
+  /*display: none;*/
+}
+@media only screen and (min-width: 768px){
+  .contenido-dia > div{
+    float: left;
+    width: 33.3%;
+  }
+}
+.contenido-dia > div p{
+  text-align: left;
+
+}
+.contenido-dia > div label{
+  display: block;
+  margin-bottom: 10px;
+}
+.contenido-dia > div input{
+  margin-right: 10px;
+
+}
+.contenido-dia > div label time{
+  color: #fe4918;
+  font-weight: bold;
+}
+/**Resumen registro**/
+
+div.resumen p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+div.resumen div.extras{
+  float: left;
+  width: 50%;
+  padding: 30px;
+
+
+}
+div.extras div.orden{
+text-align: left;
+margin-bottom: 10px;
+}
+div.extras div.orden input{
+  margin: 10px 0 0 0;
+
+}
+div.resumen div.total{
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+div.resumen input{
+  display: block;
+  margin: 10px auto;
 }
 /** ==========================================================================
 Helper classes
