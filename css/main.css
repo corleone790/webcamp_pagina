@@ -194,6 +194,53 @@ ul {
 .float-right {
   float: right;
 }
+
+/**Lettering**/
+h1.nombre-sitio span{
+  position: relative;
+  text-shadow: 0 0 30px black;
+}
+@media only screen and (min-width: 992px){
+  .char1{
+    top: 20px; right: 20px;
+  }
+  .char2{
+    top: 0px; left: -20px;
+  }
+  .char3{
+    top: 10px; right: 20px;
+  }
+  .char4{
+    top: 5px; right: 10px; 
+    
+  }
+  .char5{
+    top: 15px; right: 10px;
+  }
+  .char6{
+    top: 5px; left: 10px;
+    
+  }
+  .char7{
+    top: 20px; left: -10px;
+    
+  }
+  .char8{
+    top: 0; left: 10px;
+  }
+  .char9{
+    top: 10px; right: 20px;
+
+    
+  }
+  .char10{
+    top: 20px; right: 20px;
+  }
+
+
+}
+
+
 /**Header**/
 div.hero {
   background-image: url(../img/encabezado.jpg);
@@ -271,6 +318,13 @@ div.barra {
   background-color: #353535;
   padding: 20px 0;
 }
+.fixed{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
 div.logo {
   width: 80%;
   float: left;
@@ -286,6 +340,7 @@ div.logo img {
 /**Nav principal**/
 nav.navegacion-principal {
   display: none;
+  width: 100%;
 }
 nav.navegacion-principal a {
   font-family: "Oswald", sans-serif;
@@ -728,13 +783,23 @@ p.copyright {
   text-align: center;
 }
 /**INTERNAS**/
+/*Conferencia*/
+body.conferencia .navegacion-principal .activo{
+  border-bottom: 2px solid #fe4918;
+
+}
+div.galeria a{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/*registro*/
 form.registro h3 {
   text-align: center;
   text-transform: uppercase;
   margin: 20px 0 0 0;
 }
 form.registro label {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 h4 {
